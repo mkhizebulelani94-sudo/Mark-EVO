@@ -21,11 +21,14 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //Variable Declarations for textViews and buttons
+
         val marksInput = findViewById<EditText>(R.id.editMarks)
         val resultText = findViewById<TextView>(R.id.txtResult)
         val button = findViewById<Button>(R.id.btnCheck)
         val resetButton = findViewById<Button>(R.id.txtstyle)
 
+        //Button processing
 
         button.setOnClickListener {
 
@@ -47,6 +50,8 @@ class MainActivity : ComponentActivity() {
             else {
                 resultText.text = "Symbol : E"
             }
+
+
 
 
 
